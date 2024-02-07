@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import classes from './project-card.module.css';
+import classes from './project-card.module.scss';
 import { useDispatch } from 'react-redux';
 import { globalActions } from '../redux/features/global/reducer';
 
@@ -11,24 +11,61 @@ function ProjectCard({
   projectDescription,
   buttonTitle,
   buttonFunc,
+  techIcons,
+  type,
 }) {
   const dispatch = useDispatch();
   const clickToLink = (link) => {
     window.location.href = link;
   };
+  const imageProducer = (type) => {
+    switch (type) {
+      case 'portofolio':
+        return (
+          <div className={`mx-2 p-3 ${classes.imageContain}`}>
+            <Image
+              className={`${classes.porto} ${classes.image}`}
+              src={cardImage}
+              fill
+              style={{ objectFit: 'contain' }}
+            />
+          </div>
+        );
+      default:
+        return (
+          <div className={`mx-2 ${classes.imageContain}`}>
+            <Image
+              className={`${classes.image}`}
+              src={cardImage}
+              fill
+              style={{ objectFit: 'contain' }}
+            />
+          </div>
+        );
+    }
+  };
   return (
-    <div className="flex flex-col max-w-sm rounded overflow-hidden shadow-lg mx-1 my-1 transition-colors hover:border-blue-300 hover:bg-slate-400 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30">
+    <div
+      className={`${classes.cardContainer} flex flex-col max-w-sm rounded overflow-hidden shadow-lg mx-1 my-1 mb-7 transition-colors hover:border-blue-300 hover:bg-slate-400 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30`}
+    >
       <div
         className={` ${classes.imageWraper} rounded-xl mb-5 mt-2 flex w-full justify-center`}
       >
-        <div className={`mx-2 ${classes.imageContain}`}>
-          <Image
-            className={`${classes.image}`}
-            src={cardImage}
-            fill
-            style={{ objectFit: 'contain' }}
-          />
-        </div>
+        {imageProducer(type)}
+      </div>
+      <div className={`${classes.techLogoContainer}`}>
+        {techIcons.map((techIcon, idx) => {
+          return (
+            <div key={idx} className={`${classes.techLogo} mr-2`}>
+              <Image
+                src={`/images/${techIcon}`}
+                width="30"
+                height="30"
+                alt="background"
+              />
+            </div>
+          );
+        })}
       </div>
       <div className="px-6 py-4">
         <div className="font-bold text-xl mb-2">{projectTitle}</div>

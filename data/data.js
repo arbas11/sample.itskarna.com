@@ -1,5 +1,27 @@
 export const frontend = [
   {
+    type: 'portofolio',
+    cardImage: '/images/portfolio-intropage.png',
+    projectTitle: 'My portfolio page',
+    projectLink: 'http://sample.itskarna.com',
+    projectDescription: 'my portofolio page build using next js',
+    buttonTitle: 'Detail',
+    modalData: {
+      projectImages: [
+        'portfolio-intropage.png',
+        'portfolio1.png',
+        'portfolio2.png',
+        'portfolio3.png',
+      ],
+      techIcons: ['next.svg', 'sass.png', 'tailwind.png'],
+      buttons: {
+        Home: 'http://sample.itskarna.com',
+      },
+      detail:
+        'Showcasing some of my project. Using nextjs with a help from sass and tailwind to styling. Just go back now and start look around instead of reading this. stop reading it, go back now!',
+    },
+  },
+  {
     cardImage: '/images/markindo-crm-web-home.png',
     projectTitle: 'Markindo Sales Customer Form',
     projectLink: 'http://portal.markindo.co.id:3001',
@@ -37,7 +59,7 @@ export const frontend = [
         'mkd-landing-solution.png',
         'mkd-landing-solution2.png',
       ],
-      techIcons: ['react.png', 'sass.png', 'bootstrap.png', 'axios.png'],
+      techIcons: ['react.png', 'sass.png', 'bootstrap.png', 'axios.jpg'],
       buttons: {
         Link: 'http://portal.markindo.co.id/mobile',
       },
@@ -241,33 +263,30 @@ export const infrastructure = [
     cardImage: '/images/dockerfile.png',
     projectTitle: 'Docker',
     projectLink: 'https://www.npmjs.com/package/@mkdglobal/mk22kfcl/',
-    projectDescription: 'nginx server',
+    projectDescription: 'Containerization using Docker',
     modalData: {
-      projectImages: ['100!_homepage.png'],
-      techIcons: ['html.png', 'css.png', 'bootstrap.png', 'js.png'],
+      projectImages: ['dockerfile.png'],
+      techIcons: ['docker.png'],
       buttons: {
-        'Live art': 'https://sample.itskarna.com/100/',
-        Github: 'https://github.com/arbas11/100art',
+        Github: 'https://github.com/arbas11?tab=repositories',
       },
-      detail: 'some detail',
-      objective: 'some objective',
+      detail:
+        'Contenerizing using docker to deploying application. Installing docker in vps and setting up some config to deploying apps and services to the docker.',
     },
   },
   {
     cardImage: '/images/kubernetes.png',
     projectTitle: 'Kubernetes',
     projectLink: 'https://github.com/arbas11',
-    projectDescription:
-      'Kubernetes container orchestration. I used to maintain my microservices.',
+    projectDescription: 'Kubernetes container orchestration',
     modalData: {
-      projectImages: ['100!_homepage.png'],
-      techIcons: ['html.png', 'css.png', 'bootstrap.png', 'js.png'],
+      projectImages: ['kubernetes.png'],
+      techIcons: ['kuberneteslogo.png'],
       buttons: {
-        'Live art': 'https://sample.itskarna.com/100/',
-        Github: 'https://github.com/arbas11/100art',
+        Github: 'https://github.com/arbas11?tab=repositories',
       },
-      detail: 'some detail',
-      objective: 'some objective',
+      detail:
+        'Kubernetes container orchestration. I used to maintain my microservices and all my nodes server. Install kubernetes in all our server and cofigurations',
     },
   },
   {
@@ -277,14 +296,13 @@ export const infrastructure = [
     projectDescription:
       'A library for kafka message broker. Build on top of kafkaJs. Using typescript and available on npm library.',
     modalData: {
-      projectImages: ['100!_homepage.png'],
-      techIcons: ['html.png', 'css.png', 'bootstrap.png', 'js.png'],
+      projectImages: ['kafka-lib.png'],
+      techIcons: ['kafka.png', 'ts.png'],
       buttons: {
-        'Live art': 'https://sample.itskarna.com/100/',
-        Github: 'https://github.com/arbas11/100art',
+        Npm: 'https://www.npmjs.com/package/@mkdglobal/mk22kfcl',
       },
-      detail: 'some detail',
-      objective: 'some objective',
+      detail:
+        'This libary is build on top of kafkajs. Trying to solve a the usage of kafkajs. I implement a separation of concern design principle. Configuration in one place to then run inside the index where all the connections happen, also seperate out handlers and assigners so it better organize and scalability',
     },
   },
   {
@@ -294,13 +312,12 @@ export const infrastructure = [
     projectDescription: 'nginx server',
     modalData: {
       projectImages: ['100!_homepage.png'],
-      techIcons: ['html.png', 'css.png', 'bootstrap.png', 'js.png'],
+      techIcons: ['nginx.png'],
       buttons: {
         'Live art': 'https://sample.itskarna.com/100/',
         Github: 'https://github.com/arbas11/100art',
       },
-      detail: 'some detail',
-      objective: 'some objective',
+      detail: 'Set up nginx in a bare metal server',
     },
   },
 ];

@@ -60,6 +60,8 @@ export default function Home() {
               projectLink={cardData.projectLink}
               projectDescription={cardData.projectDescription}
               buttonTitle={cardData.buttonTitle}
+              techIcons={cardData.modalData.techIcons}
+              type={cardData.type}
               buttonFunc={() => {
                 dispatch(
                   globalActions.showModal({
@@ -94,6 +96,7 @@ export default function Home() {
               projectLink={cardData.projectLink}
               projectDescription={cardData.projectDescription}
               buttonTitle={cardData.buttonTitle}
+              techIcons={cardData.modalData.techIcons}
               buttonFunc={() => {
                 dispatch(
                   globalActions.showModal({
@@ -128,6 +131,7 @@ export default function Home() {
               projectLink={cardData.projectLink}
               projectDescription={cardData.projectDescription}
               buttonTitle={cardData.buttonTitle}
+              techIcons={cardData.modalData.techIcons}
               buttonFunc={() => {
                 dispatch(
                   globalActions.showModal({
@@ -162,6 +166,7 @@ export default function Home() {
               projectLink={cardData.projectLink}
               projectDescription={cardData.projectDescription}
               buttonTitle={cardData.buttonTitle}
+              techIcons={cardData.modalData.techIcons}
               buttonFunc={() => {
                 dispatch(
                   globalActions.showModal({
