@@ -312,14 +312,14 @@ export const other = [
     projectLink: 'https://www.npmjs.com/package/@mkdglobal/mk22kfcl/',
     projectDescription: 'Markindo chatbot for exhibition',
     modalData: {
-      projectImages: ['100!_homepage.png'],
+      projectImages: ['markindo-chatbot.png'],
       techIcons: ['html.png', 'css.png', 'bootstrap.png', 'js.png'],
       buttons: {
         'Live art': 'https://sample.itskarna.com/100/',
         Github: 'https://github.com/arbas11/100art',
       },
-      detail: 'some detail',
-      objective: 'some objective',
+      detail:
+        'Markindo whatsapp chatbot used for customer to be able to connect with the company. It is used mainly during an exibition, where visitors come to booth and scan qr to then directed to out chatbot to then fill out some detail about them to be able to access company product catalog ',
     },
   },
 ];
