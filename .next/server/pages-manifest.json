@@ -1,9 +1,9 @@
 {
-  "/_error": "pages/_error.js",
   "/_app": "pages/_app.js",
-  "/_document": "pages/_document.js",
-  "/image": "pages/image.html",
-  "/": "pages/index.html",
   "/api/hello": "pages/api/hello.js",
+  "/image": "pages/image.html",
+  "/_document": "pages/_document.js",
+  "/": "pages/index.html",
+  "/_error": "pages/_error.js",
   "/404": "pages/404.html"
 }
