@@ -154,7 +154,7 @@ export default function Home() {
         })}
       </div>
       <div className={`${classes.title} relative flex place-items-center`}>
-        <h1 id="others">Others</h1>
+        <h1 id="others">OTHERS</h1>
       </div>
 
       <div className="mb-20 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">

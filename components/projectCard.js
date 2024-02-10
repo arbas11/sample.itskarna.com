@@ -46,7 +46,7 @@ function ProjectCard({
   };
   return (
     <div
-      className={`${classes.cardContainer} flex flex-col max-w-sm rounded overflow-hidden shadow-lg mx-1 my-1 mb-7 transition-colors hover:border-blue-300 hover:bg-slate-400 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30`}
+      className={`${classes.cardContainer} flex flex-col max-w-sm rounded overflow-hidden shadow-lg mx-2 my-1 mb-7 transition-colors bg-slate-400 hover:border-blue-300 hover:bg-slate-400 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30`}
     >
       <div
         className={` ${classes.imageWraper} rounded-xl mb-5 mt-2 flex w-full justify-center`}
