@@ -45,12 +45,19 @@ export default function Home() {
 
   return (
     <div className={styles.landing}>
-      <Image
+      <div className={styles.imageContain}>
+        <p>I'm</p>
+        <p>Ario Baskoro</p>
+        <p className={`${styles.subTittle}`}>
+          Here is some of my works, check it out!
+        </p>
+      </div>
+      {/* <Image
         className={styles.image}
         src="/images/portfolio-intro.png"
         fill={true}
         alt="background"
-      />
+      /> */}
       <Link
         href="#frontend"
         className={`${styles.scrolldownlink} ${styles.scrolldownarrow}`}
