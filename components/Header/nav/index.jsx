@@ -5,25 +5,7 @@ import { usePathname } from 'next/navigation';
 import { menuSlide } from '../animation';
 import Link from './Link';
 import Curve from './Curve';
-
-const navItems = [
-  {
-    title: 'Frontend',
-    href: '/#frontend',
-  },
-  {
-    title: 'Backend',
-    href: '/#backend',
-  },
-  {
-    title: 'Infrastructure',
-    href: '/#infrastructure',
-  },
-  {
-    title: 'Others',
-    href: '/#others',
-  },
-];
+import { data } from '../../../data/data';
 
 export default function index() {
   const pathname = usePathname();
@@ -44,7 +26,7 @@ export default function index() {
           }}
           className={styles.nav}
         >
-          {navItems.map((data, index) => {
+          {data.map((data, index) => {
             return (
               <Link
                 key={index}

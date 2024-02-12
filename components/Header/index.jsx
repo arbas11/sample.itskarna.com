@@ -9,6 +9,7 @@ import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import Rounded from '../../common/RoundedButton';
 import Magnetic from '../../common/Magnetic';
 import Link from 'next/link';
+import { data } from '../../data/data';
 
 export default function index() {
   const header = useRef(null);
@@ -50,24 +51,16 @@ export default function index() {
       <div ref={header} className={styles.header}>
         <div className={styles.logo}></div>
         <div className={styles.nav}>
-          <Magnetic>
-            <div className={styles.el}>
-              <Link href="#frontend">Frontend</Link>
-              <div className={styles.indicator}></div>
-            </div>
-          </Magnetic>
-          <Magnetic>
-            <div className={styles.el}>
-              <Link href="#backend">Backend</Link>
-              <div className={styles.indicator}></div>
-            </div>
-          </Magnetic>
-          <Magnetic>
-            <div className={styles.el}>
-              <Link href="#infrastructure">Infrastructure</Link>
-              <div className={styles.indicator}></div>
-            </div>
-          </Magnetic>
+          {data.map((value, idx) => {
+            return (
+              <Magnetic key={idx}>
+                <div className={styles.el}>
+                  <Link href={`#${value.name}`}>{value.title}</Link>
+                  <div className={styles.indicator}></div>
+                </div>
+              </Magnetic>
+            );
+          })}
         </div>
       </div>
       <div ref={button} className={styles.headerButtonContainer}>
