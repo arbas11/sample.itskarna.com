@@ -236,14 +236,13 @@ export const data = [
         projectDescription:
           'Backend for company resources management web application ranging from managing customer data, customer machines data, landing page content management system',
         modalData: {
-          projectImages: ['100!_homepage.png'],
-          techIcons: ['html.png', 'css.png', 'bootstrap.png', 'js.png'],
+          projectImages: ['markindo-crm-web-home.png'],
+          techIcons: ['js.png', 'express.png', 'mysql.png'],
           buttons: {
-            'Live art': 'https://sample.itskarna.com/100/',
-            Github: 'https://github.com/arbas11/100art',
+            Close: 'http://sample.itskarna.com',
           },
-          detail: 'some detail',
-          objective: 'some objective',
+          detail:
+            'Backend for company resources management web application ranging from managing customer data, customer machines data, landing page content management system',
         },
       },
       {
@@ -253,14 +252,13 @@ export const data = [
         projectDescription:
           'Backend for a frontend for managing its content so the marketing team can change the product its displayed for the campaign they required',
         modalData: {
-          projectImages: ['100!_homepage.png'],
-          techIcons: ['html.png', 'css.png', 'bootstrap.png', 'js.png'],
+          projectImages: ['landing-page-allpack-home.png'],
+          techIcons: ['js.png', 'express.png', 'mysql.png'],
           buttons: {
-            'Live art': 'https://sample.itskarna.com/100/',
-            Github: 'https://github.com/arbas11/100art',
+            Close: 'http://sample.itskarna.com',
           },
-          detail: 'some detail',
-          objective: 'some objective',
+          detail:
+            'Backend for a frontend for managing its content so the marketing team can change the product its displayed for the campaign they required',
         },
       },
       {

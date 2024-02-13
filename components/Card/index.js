@@ -25,7 +25,7 @@ const Card = ({
   const scale = useTransform(progress, range, [1, targetScale]);
 
   return (
-    <div ref={container} className={styles.cardContainer}>
+    <div ref={container} className={`${styles.cardContainer}`}>
       <motion.div
         style={{
           backgroundColor: color,

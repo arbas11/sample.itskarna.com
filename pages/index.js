@@ -5,17 +5,9 @@ import classes from '../styles/homepage.module.css';
 import CustomModal from '@/components/customModal/CustomModal';
 import Header from '../components/Header/index';
 import Landing from '../components/Landing/index';
-import { backend, frontend, infrastructure, other, data } from '@/data/data';
+import { data } from '@/data/data';
 import { useDispatch } from 'react-redux';
 import { globalActions } from '../redux/features/global/reducer';
-// import { poppins } from '@/app/ui/fonts';
-
-// const poppin = poppins({
-//   subsets: ['latin'],
-//   display: 'swap',
-//   variable: '--font-poppins',
-//   weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
-// });
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -33,7 +25,6 @@ export default function Home() {
       {data.map((value, idx) => {
         return (
           <>
-            {' '}
             <div
               key={idx}
               className={`${classes.title} relative flex place-items-center`}
