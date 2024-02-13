@@ -6,10 +6,13 @@ import { menuSlide } from '../animation';
 import Link from './Link';
 import Curve from './Curve';
 import { data } from '../../../data/data';
+import useWindowDimensions from '@/hooks/useWindowDimensions';
 
 export default function index() {
   const pathname = usePathname();
   const [selectedIndicator, setSelectedIndicator] = useState(pathname);
+  const { height, width } = useWindowDimensions();
+  const smBreakpoint = 400;
 
   return (
     <motion.div
@@ -24,7 +27,11 @@ export default function index() {
           onMouseLeave={() => {
             setSelectedIndicator(pathname);
           }}
-          className={styles.nav}
+          className={
+            width <= smBreakpoint
+              ? `${styles.nav} ${styles.navSm}`
+              : `${styles.nav}`
+          }
         >
           {data.map((data, index) => {
             return (

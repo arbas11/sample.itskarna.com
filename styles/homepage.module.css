@@ -4,6 +4,9 @@
   font-size: 2.5em;
   border-bottom: 2px solid #f0dac4;
 }
+.titleSm {
+  font-size: 2rem;
+}
 .footer {
   width: 100%;
   background-color: transparent;

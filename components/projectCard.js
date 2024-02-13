@@ -13,6 +13,7 @@ function ProjectCard({
   buttonFunc,
   techIcons,
   type,
+  idx,
 }) {
   const dispatch = useDispatch();
   const clickToLink = (link) => {
@@ -46,6 +47,7 @@ function ProjectCard({
   };
   return (
     <div
+      key={idx}
       className={`${classes.cardContainer} flex flex-col max-w-sm rounded overflow-hidden shadow-lg mx-2 my-1 mb-7 transition-colors bg-slate-400 hover:border-blue-300 hover:bg-slate-400 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30`}
     >
       <div

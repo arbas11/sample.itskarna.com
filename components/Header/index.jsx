@@ -10,12 +10,17 @@ import Rounded from '../../common/RoundedButton';
 import Magnetic from '../../common/Magnetic';
 import Link from 'next/link';
 import { data } from '../../data/data';
+import useWindowDimensions from '@/hooks/useWindowDimensions';
 
 export default function index() {
   const header = useRef(null);
   const [isActive, setIsActive] = useState(false);
   const pathname = usePathname();
   const button = useRef(null);
+
+  const { height, width } = useWindowDimensions();
+  const breakpoint = 488;
+  const smBreakpoint = 400;
 
   useEffect(() => {
     if (isActive) setIsActive(false);
@@ -52,6 +57,16 @@ export default function index() {
         <div className={styles.logo}></div>
         <div className={styles.nav}>
           {data.map((value, idx) => {
+            if (width <= breakpoint) {
+              if (value.name === 'others') {
+                return null;
+              }
+            }
+            if (width <= smBreakpoint) {
+              if (value.name === 'others' || value.name === 'infrastructure') {
+                return null;
+              }
+            }
             return (
               <Magnetic key={idx}>
                 <div className={styles.el}>

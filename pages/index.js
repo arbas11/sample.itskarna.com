@@ -8,10 +8,15 @@ import Landing from '../components/Landing/index';
 import { data } from '@/data/data';
 import { useDispatch } from 'react-redux';
 import { globalActions } from '../redux/features/global/reducer';
+import useWindowDimensions from '@/hooks/useWindowDimensions';
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
   const dispatch = useDispatch();
+  const { height, width } = useWindowDimensions();
+  const breakpoint = 488;
+  const smBreakpoint = 370;
+
   const clickToLink = (link) => {
     window.location.href = link;
   };
@@ -27,7 +32,11 @@ export default function Home() {
           <>
             <div
               key={idx}
-              className={`${classes.title} relative flex place-items-center`}
+              className={
+                width <= smBreakpoint
+                  ? `${classes.title} ${classes.titleSm} relative flex place-items-center`
+                  : `${classes.title} relative flex place-items-center`
+              }
             >
               <h1 id={value.name}>{value.title}</h1>
             </div>
