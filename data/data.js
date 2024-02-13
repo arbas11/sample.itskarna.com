@@ -5,6 +5,37 @@ export const data = [
     title: 'FRONTEND',
     data: [
       {
+        cardImage: '/images/teknik-crm-1.png',
+        projectTitle: 'Flutter Markindo Customer app',
+        projectLink: 'http://sample.itskarna.com',
+        projectDescription:
+          'Mobile app version for Markindo rekateknik customer apps. User can browse around our catalog and registered user can see their company registered machines and making report if there is a problem.',
+        buttonTitle: 'Detail',
+        modalData: {
+          projectImages: [
+            'teknik-crm-1.png',
+            'teknik-crm-2.png',
+            'teknik-crm-3.png',
+            'teknik-crm-4.png',
+            'teknik-crm-5.png',
+            'teknik-crm-6.png',
+            'teknik-crm-7.png',
+            'teknik-crm-7.png',
+            'teknik-crm-8.png',
+            'teknik-crm-9.png',
+            'teknik-crm-10.png',
+            'teknik-crm-11.png',
+            'teknik-crm-12.png',
+          ],
+          techIcons: ['dart.png', 'flutter.png'],
+          buttons: {
+            Close: 'http://sample.itskarna.com',
+          },
+          detail:
+            'Mobile app version for Markindo rekateknik customer apps. User can browse around our catalog and registered user can see their company registered machines and making report if there is a problem.',
+        },
+      },
+      {
         type: 'portofolio',
         cardImage: '/images/portfolio-intropage.png',
         projectTitle: 'My portfolio page',
