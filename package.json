@@ -2,7 +2,7 @@
   "name": "sample.itskarna.com",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://arbas.biz.id/",
+  "homepage": "https://arbas.biz.id/",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
