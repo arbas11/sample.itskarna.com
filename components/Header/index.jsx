@@ -18,38 +18,38 @@ export default function index() {
   const pathname = usePathname();
   const button = useRef(null);
 
-  const { height, width } = useWindowDimensions();
-  const breakpoint = 488;
-  const smBreakpoint = 400;
+  // const { height, width } = useWindowDimensions();
+  // const breakpoint = 488;
+  // const smBreakpoint = 400;
 
-  useEffect(() => {
-    if (isActive) setIsActive(false);
-  }, [pathname]);
+  // useEffect(() => {
+  //   if (isActive) setIsActive(false);
+  // }, [pathname]);
   // if (typeof window !== 'undefined') {
-  useLayoutEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
-    gsap.to(button.current, {
-      scrollTrigger: {
-        trigger: document.documentElement,
-        start: 0,
-        end: window.innerHeight,
-        onLeave: () => {
-          gsap.to(button.current, {
-            scale: 1,
-            duration: 0.25,
-            ease: 'power1.out',
-          });
-        },
-        onEnterBack: () => {
-          gsap.to(
-            button.current,
-            { scale: 0, duration: 0.25, ease: 'power1.out' },
-            setIsActive(false)
-          );
-        },
-      },
-    });
-  }, []);
+  // useLayoutEffect(() => {
+  //   gsap.registerPlugin(ScrollTrigger);
+  //   gsap.to(button.current, {
+  //     scrollTrigger: {
+  //       trigger: document.documentElement,
+  //       start: 0,
+  //       end: window.innerHeight,
+  //       onLeave: () => {
+  //         gsap.to(button.current, {
+  //           scale: 1,
+  //           duration: 0.25,
+  //           ease: 'power1.out',
+  //         });
+  //       },
+  //       onEnterBack: () => {
+  //         gsap.to(
+  //           button.current,
+  //           { scale: 0, duration: 0.25, ease: 'power1.out' },
+  //           setIsActive(false)
+  //         );
+  //       },
+  //     },
+  //   });
+  // }, []);
   // }
   return (
     <>
@@ -57,16 +57,16 @@ export default function index() {
         <div className={styles.logo}></div>
         <div className={styles.nav}>
           {data.map((value, idx) => {
-            if (width <= breakpoint) {
-              if (value.name === 'others') {
-                return null;
-              }
-            }
-            if (width <= smBreakpoint) {
-              if (value.name === 'others' || value.name === 'infrastructure') {
-                return null;
-              }
-            }
+            // if (width <= breakpoint) {
+            //   if (value.name === 'others') {
+            //     return null;
+            //   }
+            // }
+            // if (width <= smBreakpoint) {
+            //   if (value.name === 'others' || value.name === 'infrastructure') {
+            //     return null;
+            //   }
+            // }
             return (
               <Magnetic key={idx}>
                 <div className={styles.el}>

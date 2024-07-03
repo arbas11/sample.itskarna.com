@@ -7,7 +7,7 @@ export const data = [
       {
         cardImage: '/images/teknik-crm-1.png',
         projectTitle: 'Flutter Markindo Customer app',
-        projectLink: 'http://sample.itskarna.com',
+        projectLink: 'https://arbas.biz.id',
         projectDescription:
           'Mobile app version for Markindo rekateknik customer apps. User can browse around our catalog and registered user can see their company registered machines and making report if there is a problem.',
         buttonTitle: 'Detail',
@@ -29,7 +29,7 @@ export const data = [
           ],
           techIcons: ['dart.png', 'flutter.png'],
           buttons: {
-            Close: 'http://sample.itskarna.com',
+            Close: 'https://arbas.biz.id',
           },
           detail:
             'Mobile app version for Markindo rekateknik customer apps. User can browse around our catalog and registered user can see their company registered machines and making report if there is a problem.',
@@ -39,7 +39,7 @@ export const data = [
         type: 'portofolio',
         cardImage: '/images/portfolio-intropage.png',
         projectTitle: 'My portfolio page',
-        projectLink: 'http://sample.itskarna.com',
+        projectLink: 'https://arbas.biz.id',
         projectDescription: 'my portofolio page build using next js',
         buttonTitle: 'Detail',
         modalData: {
@@ -51,7 +51,7 @@ export const data = [
           ],
           techIcons: ['next.svg', 'sass.png', 'tailwind.png'],
           buttons: {
-            Home: 'http://sample.itskarna.com',
+            Home: 'https://arbas.biz.id',
           },
           detail:
             'Showcasing some of my project. Using nextjs with a help from sass and tailwind to styling. Just go back now and start look around instead of reading this. stop reading it, go back now!',
@@ -73,7 +73,7 @@ export const data = [
           ],
           techIcons: ['js.png', 'css.png', 'react.png', 'sass.png'],
           buttons: {
-            Close: 'http://sample.itskarna.com',
+            Close: 'https://arbas.biz.id',
           },
           detail:
             'Sales simple page to fastly access customers data during the exibition of. While they encourage customers to fill out their data they also able to help them fill out for them so customer still able to access our landing page',
@@ -148,7 +148,7 @@ export const data = [
       {
         cardImage: '/images/ngochat.png',
         projectTitle: 'Ngochat',
-        projectLink: 'https://sample.itskarna.com/100/',
+        projectLink: 'https://arbas.biz.id/',
         projectDescription:
           "let's talk! ngochat let you socialize with your friend and ngoceh without limit.",
         buttonTitle: 'Detail',
@@ -201,7 +201,7 @@ export const data = [
       {
         cardImage: '/images/100!_homepage.png',
         projectTitle: '100!',
-        projectLink: 'https://sample.itskarna.com/100/',
+        projectLink: 'https://arbas.biz.id/100art',
         projectDescription:
           'HTML, CSS combine with JS in vanila flavor, displaying art to the masses.',
         modalData: {
@@ -213,7 +213,7 @@ export const data = [
           ],
           techIcons: ['html.png', 'css.png', 'bootstrap.png', 'js.png'],
           buttons: {
-            'Live art': 'https://sample.itskarna.com/100/',
+            'Live art': 'https://arbas.biz.id/100art',
             Github: 'https://github.com/arbas11/100art',
           },
           detail:
